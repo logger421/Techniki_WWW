@@ -15,7 +15,6 @@ header {
 
 header .menu {
     background-color: burlywood;
-    overflow: hidden;
     border: solid chocolate;
     border-radius: 15px;
     padding: 20px;
@@ -47,21 +46,20 @@ header a, a:link, a:hover {
 }
 
 footer {
-    background-image: url("../images/main_content_bg.jpg");
+    background-image: url("../main-images/main_content_bg.jpg");
     color: white;
     font-size: 20px;
-    margin: 10px;
     border: solid black;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
     background-color: burlywood;
-
+    margin: 20px;
 }
 
 /*index.html*/
 .index-header {
-    background-image: url(../images/bg_photo.jpg);
+    background-image: url(../main-images/bg_photo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
