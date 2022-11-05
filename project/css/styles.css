@@ -11,11 +11,6 @@ body {
 
 header {
     padding: 20px;
-    background-image: url(../images/bg_photo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: white;
 }
 
 header .menu {
@@ -26,21 +21,51 @@ header .menu {
     padding: 20px;
 }
 
+header a, a:link, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
 .menu li{
     color: white;
-    margin: 15px;
-    padding: 12px;
+    margin-left: 25px;
+    padding: 10px;
     border: solid chocolate;
-    list-style-type: none;
+    border-radius: 5px;
     font-size: 30px;
     font-family: "Calibri Light";
-    text-align: center;
-    border-radius: 5px;
     display: inline;
+    text-decoration: none;
 }
 
 .menu li:hover{
     background-color: chocolate;
+}
+
+footer {
+    background-image: url("../images/main_content_bg.jpg");
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    border: solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: burlywood;
+
+}
+
+/*index.html*/
+.index-header {
+    background-image: url(../images/bg_photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
 
 .title  {
@@ -52,16 +77,22 @@ header .menu {
     background-color: burlywood;
     border-radius: 50px;
     text-align: center;
+    margin: 5px;
     padding: 10px;
 }
 
+.title h2:hover {
+    background-color: chocolate;
+    transform: scale(1.1);
+}
 .title .main-image {
+    margin: 5px;
     border-radius: 100px;
-    padding: 10px;
     opacity: 0.8;
 }
 
 .title .main-image:hover {
+    border: solid black;
     opacity: 1;
 }
 
@@ -71,27 +102,30 @@ header .menu {
 
 .main-content img {
     border-radius: 15px;
+    width: 510px;
+    height: 350px;
     border: solid chocolate;
     position: relative;
 }
 
 .main-content-row {
-    border-radius: 10px;
-    background-image: linear-gradient(to left, #FEE694 , #C9B092);
-    border: solid chocolate;
     display: flex;
+    background-image: linear-gradient(to left, #FEE694 , #C9B092);
+    border-radius: 10px;
+    border: solid chocolate;
     margin: 25px;
     padding: 25px;
-    background-color: burlywood;
 }
 .main-content-row:nth-child(even)  {
     flex-direction: row-reverse;
-    background-image: linear-gradient(to right, #FEE694 , #C9B092);
-    border-radius: 10px;
+    background-image: linear-gradient(to right, #C9B092, #FEE694);
     display: flex;
     padding: 25px;
 }
 
+.main-content-row:hover {
+    transform: scale(1.005);
+}
 .main-content-row h1 {
     color: red;
     position: relative;
@@ -109,15 +143,4 @@ header .menu {
     margin: 20px;
 }
 
-footer {
-    background-image: url("../images/main_content_bg.jpg");
-    color: white;
-    font-size: 20px;
-    margin: 10px;
-    border: solid black;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    background-color: burlywood;
-
-}
+/*gallery*/
