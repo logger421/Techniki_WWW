@@ -8,13 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galeria</title>
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body class="gallery">
 <header class="gallery-header">
     <nav class="menu">
-        <ul>
+        <button id="menu-button"><i class="fa fa-bars"></i></button>
+        <ul id="menu">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="galeria.html">Galeria</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
@@ -43,5 +45,7 @@
 
 <footer> Copyright &copy; 2022 all rights reserved</footer>
 <script type="text/javascript" src="javascript/gallery_scripts.js"></script>
+
+<script type="text/javascript" src="javascript/toggle_menu.js"></script>
 </body>
 </html>

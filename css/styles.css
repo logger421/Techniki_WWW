@@ -205,6 +205,18 @@ footer {
     cursor: pointer;
 }
 
+#menu-button {
+    color: white;
+    background: transparent;
+    padding: 10px;
+    border: solid chocolate;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: "Calibri Light";
+    text-decoration: none;
+    display: none;
+}
+
 /*responsiveness*/
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 767px) {
@@ -224,11 +236,20 @@ footer {
     .menu li {
         /*display: block;*/
         margin-top: 5px;
+        margin-left: 0px;
     }
 
     .menu ul {
         display: flex;
         flex-direction: column;
+    }
+
+    #menu.hide {
+        display: none;
+    }
+
+    #menu-button {
+        display: inline-block;
     }
 }
 
