@@ -271,6 +271,13 @@ footer {
     #menu-button {
         display: inline-block;
     }
+
+    .gmap iframe{
+        width: 95%;
+        height: auto;
+        padding: 15px;
+        border-radius: 30px;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
