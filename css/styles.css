@@ -217,6 +217,11 @@ footer {
     display: none;
 }
 
+.gmap iframe{
+    margin: 10px;
+    border-radius: 15px;
+}
+
 /*responsiveness*/
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 767px) {
