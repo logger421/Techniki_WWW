@@ -46,6 +46,19 @@ header a, a:link, a:hover {
     background-color: chocolate;
 }
 
+#menu-button {
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border: solid chocolate;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: "Calibri Light";
+    text-decoration: none;
+    display: none;
+}
+
 footer {
     background-image: url("../main-images/main_content_bg.jpg");
     color: white;
@@ -205,21 +218,24 @@ footer {
     cursor: pointer;
 }
 
-#menu-button {
-    color: white;
-    background: transparent;
-    padding: 10px;
-    border: solid chocolate;
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: "Calibri Light";
-    text-decoration: none;
-    display: none;
+/*kontakt.html*/
+.contact {
+    background-image: url("../main-images/main_content_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gmap {
+    display: flex;
+    justify-content: center;
+    border: white;
 }
 
 .gmap iframe{
-    margin: 10px;
-    border-radius: 15px;
+    width: 80%;
+    padding: 15px;
+    border-radius: 30px;
 }
 
 /*responsiveness*/
@@ -239,7 +255,6 @@ footer {
     }
 
     .menu li {
-        /*display: block;*/
         margin-top: 5px;
         margin-left: 0px;
     }
@@ -282,9 +297,4 @@ footer {
         width: 100%;
         height: auto;
     }
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-
 }
