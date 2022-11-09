@@ -308,7 +308,7 @@ footer {
     .menu ul {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .main-content-row, .main-content-row:nth-child(even) {
