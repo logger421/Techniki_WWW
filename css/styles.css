@@ -243,13 +243,14 @@ footer {
 .gmap {
     display: flex;
     justify-content: center;
-    border: white;
+    background-color: lightgrey;
+    margin: 5px 15%;
+    border-radius: 15px;
 }
 
 .gmap iframe {
-    width: 80%;
+    width: 100%;
     padding: 15px;
-    border-radius: 30px;
 }
 
 /*responsiveness*/
