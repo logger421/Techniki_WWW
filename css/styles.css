@@ -78,12 +78,14 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 99vh;
     color: white;
 }
 
 .title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title h2 {
@@ -131,40 +133,37 @@ footer {
     padding: 25px;
 }
 
-.main-content-row:nth-child(even) {
-    flex-direction: row-reverse;
-    background-image: linear-gradient(to right, #C9B092, #FEE694);
-    display: flex;
-    padding: 25px;
-}
-
 .main-content-row:hover {
     transform: scale(1.005);
 }
 
+.main-content-row:nth-child(even) {
+    flex-direction: row-reverse;
+    background-image: linear-gradient(to right, #C9B092, #FEE694);
+}
+
 .main-content-row h1 {
     color: red;
-    position: relative;
     text-align: left;
     padding: 5px;
     margin: 20px;
 }
 
 .main-content-row p {
-    position: relative;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: left;
-    color: white;
     margin: 20px;
+    color: white;
+    word-break: break-word;
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: left;
 }
 
 /*gallery*/
-#gallery-text{
-    display: flex;
-    justify-content: center;
+#gallery-text {
+    text-align: center;
+    font-family: "Gill Sans MT";
     font-size: 30px;
-    font-family: "JetBrains Mono ExtraBold";
+    margin-bottom: 5px;
 }
 
 .gallery .gallery-main-content {
@@ -175,10 +174,10 @@ footer {
 }
 
 .img-gallery {
-    width: 80%;
+    width: 90%;
     margin: 50px auto 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
 
@@ -234,7 +233,7 @@ footer {
     background-size: cover;
 }
 
-.contact-us{
+.contact-us {
     display: block;
     text-align: center;
     color: white;
@@ -247,7 +246,7 @@ footer {
     border: white;
 }
 
-.gmap iframe{
+.gmap iframe {
     width: 80%;
     padding: 15px;
     border-radius: 30px;
@@ -287,11 +286,15 @@ footer {
         display: inline-block;
     }
 
-    .gmap iframe{
+    .gmap iframe {
         width: 95%;
         height: 50vh;
         padding: 15px;
         border-radius: 30px;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
 
@@ -318,5 +321,9 @@ footer {
     .main-content img {
         width: 100%;
         height: auto;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
