@@ -68,7 +68,6 @@ footer {
     border-radius: 10px;
     text-align: center;
     padding: 20px;
-    background-color: burlywood;
     margin: 20px;
 }
 
@@ -287,15 +286,18 @@ footer {
         display: inline-block;
     }
 
+    .img-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .contact-us {
+        font-size: 24px;
+    }
+
     .gmap iframe {
         width: 95%;
         height: 50vh;
-        padding: 15px;
         border-radius: 30px;
-    }
-
-    .img-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
 
